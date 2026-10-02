@@ -11,7 +11,9 @@ create database DataWarehouse;
 use DataWarehouse;
 
 --Setting up layer schemas
-
+go
 create schema bronze;
+go
 create schema silver;
+go
 create schema gold;
