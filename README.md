@@ -1,4 +1,6 @@
 # sql_data_warehouse_project
 Building a modern data warehouse with SQL Server, including ETL processes, data modeling and analytics.
 
-# Creating brand new database
+1. Creating brand new database "DataWarehouse".
+2. Creating schemas for bronze, silver, gold.
+3. 
