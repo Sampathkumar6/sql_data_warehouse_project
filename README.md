@@ -36,3 +36,10 @@ Building the original data
 
 ## Snapshots relevant to bronze layer
 
+![Creating tables](images/Bronze_layer/Creating_tables.PNG)
+
+
+![Bronze layer stored procedure](images/Bronze_layer/Bronze_layer_stored_procedure.PNG)
+
+
+![Loading data](images/Bronze_layer/Bronze_layer_loading_data.PNG)
