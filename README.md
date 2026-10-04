@@ -1,8 +1,14 @@
 # sql_data_warehouse_project
 Building a modern data warehouse with SQL Server, including ETL processes, data modeling and analytics.
+This repository contains the architecture, scripts, and source data for building an enterprise SQL Data Warehouse.
 
 1. Creating brand new database "DataWarehouse".
 2. Creating schemas for bronze, silver, gold.
+
+## Directory Structure
+* **datasets/** - Raw source data (CSV/Excel files).
+* **design/** - Data models, architecture diagrams, and schema blueprints.
+* **scripts/** - SQL scripts for ETL pipeline, DDL tables, and stored procedures.
 
 # Bronze Layer
 Building the original data
@@ -21,19 +27,3 @@ Building the original data
 ## Adding error handling, load metrics etc
 -  Adding try and catch logic with catch statements like error_message, error_number etc.
 -  Adding time variables like start and end to measere loading time for tables and entire batch load time
-
-
-------------------------------------------------------------------------------------------------------------
-edit below accordingly
-------------------------------------------------------------------------------------------------------------
-# SQL Data Warehouse Project
-
-## Project Overview
-This repository contains the architecture, scripts, and source data for building an enterprise SQL Data Warehouse.
-
-## Directory Structure
-* **datasets/** - Raw source data (CSV/Excel files).
-* **design/** - Data models, architecture diagrams, and schema blueprints.
-* **docs/** - Documentation, data dictionaries, and business rules.
-* **scripts/** - SQL scripts for ETL pipeline, DDL tables, and stored procedures.
-* **tests/** - SQL validation scripts and data quality test cases.
