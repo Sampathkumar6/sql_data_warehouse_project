@@ -10,13 +10,20 @@ This repository contains the architecture, scripts, and source data for building
 * **design/** - Data models, architecture diagrams, and schema blueprints.
 * **scripts/** - SQL scripts for ETL pipeline, DDL tables, and stored procedures.
 
+----------------------------------------------------------------------------------------------
+
 # Bronze Layer
+1.  Interview source system experts
+2.  Data Ingetion
+3.  Data completeness and schema checks
+4.  Data documentation
+
 Building the original data
 
 1.  Creating tables for respective crm and erp data sets.
 2.  Using bulk insert for filling data from source files onto earlier created tables.
 3.  Introducing start,end time variable to show individual and batch load metrics.
-4.  Introducing error handling statements (try,catch) which provide info luike error message , number etc.
+4.  Introducing error handling statements (try,catch) which provide info luike error message, number etc.
 5.  Saving the entire load section to stored procedure
 
 ## Checking tips after each bulk insert -
@@ -43,3 +50,12 @@ Building the original data
 
 
 ![Loading data](images/Bronze_layer/Bronze_layer_loading_data.PNG)
+
+----------------------------------------------------------------------------------------------
+
+# Silver Layer
+
+1.  Using data analysis for understanding data.
+2.  Performing data cleansing like data quality bronze layer, data transformations, insert into silver layer
+3.  Data validation
+4.  Data documentation

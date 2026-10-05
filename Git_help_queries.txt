@@ -1,0 +1,12 @@
+-------------------------------------------
+to stage local updates most recent then adding commit comment then pushing to repo
+-------------------------------------------
+git add -A
+git commit -m "Update"
+git push
+
+-------------------------------------------
+in case something in repo which is not in loacl and for checking what is it
+-------------------------------------------
+git fetch origin
+git diff --name-status HEAD...origin/main
