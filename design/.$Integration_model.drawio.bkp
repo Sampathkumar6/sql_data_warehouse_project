@@ -1,6 +1,6 @@
 <mxfile host="Electron">
   <diagram name="Page-1" id="_wHR2tmHuvcRUrqaJT5B">
-    <mxGraphModel dx="1200" dy="873" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="794" dy="582" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -74,16 +74,16 @@
         <mxCell id="Me-Ba-i2_rPmA8wPwA7q-36" edge="1" parent="1" source="Me-Ba-i2_rPmA8wPwA7q-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" target="Me-Ba-i2_rPmA8wPwA7q-29">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Me-Ba-i2_rPmA8wPwA7q-37" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;rounded=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=26;" value="&lt;font style=&quot;font-size: 19px;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;&quot;&gt;erp_&lt;/font&gt;&lt;/font&gt;&lt;font face=&quot;Cascadia Mono&quot; style=&quot;&quot;&gt;loc_a101&lt;/font&gt;&lt;/font&gt;" vertex="1">
-          <mxGeometry height="60" width="160" x="80" y="390" as="geometry">
+        <mxCell id="Me-Ba-i2_rPmA8wPwA7q-37" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;rounded=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=26;" value="&lt;font style=&quot;font-size: 19px;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;&quot;&gt;erp_&lt;/font&gt;&lt;/font&gt;&lt;font face=&quot;Cascadia Mono&quot; style=&quot;&quot;&gt;px_cat-g1v2&lt;/font&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="190" x="50" y="390" as="geometry">
             <mxRectangle height="40" width="200" x="80" y="340" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Me-Ba-i2_rPmA8wPwA7q-38" parent="Me-Ba-i2_rPmA8wPwA7q-37" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="cst_id" vertex="1">
-          <mxGeometry height="30" width="160" y="30" as="geometry" />
+        <mxCell id="Me-Ba-i2_rPmA8wPwA7q-38" parent="Me-Ba-i2_rPmA8wPwA7q-37" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="prd_id" vertex="1">
+          <mxGeometry height="30" width="190" y="30" as="geometry" />
         </mxCell>
         <mxCell id="Me-Ba-i2_rPmA8wPwA7q-39" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Product categories" vertex="1">
-          <mxGeometry height="20" width="110" x="110" y="380" as="geometry" />
+          <mxGeometry height="20" width="110" x="90" y="377.5" as="geometry" />
         </mxCell>
         <mxCell id="Me-Ba-i2_rPmA8wPwA7q-40" edge="1" parent="1" source="Me-Ba-i2_rPmA8wPwA7q-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="Me-Ba-i2_rPmA8wPwA7q-38">
           <mxGeometry relative="1" as="geometry" />
@@ -92,7 +92,7 @@
           <mxGeometry height="275" width="470" x="350" y="177.5" as="geometry" />
         </mxCell>
         <mxCell id="Me-Ba-i2_rPmA8wPwA7q-42" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;dashed=1;" value="" vertex="1">
-          <mxGeometry height="310" width="260" x="60" y="165" as="geometry" />
+          <mxGeometry height="310" width="245" x="22.5" y="160" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
