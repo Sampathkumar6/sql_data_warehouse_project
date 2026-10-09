@@ -85,16 +85,20 @@ begin
 		when upper(trim(prd_line)) = 'T' then 'toner'
 		else 'Unknown'
 		end as prd_line,
-		prd_start_dt,
-		case
-		when prd_end_dt < prd_start_dt then DATEADD(day, 365, prd_start_dt)
-		when prd_end_dt is null then DATEADD(day, 365, prd_start_dt)
-		else prd_end_dt
-		end as prd_end_dt
+		CAST(prd_start_dt AS DATE) AS prd_start_dt,
+
+		--CAST(
+		--		LEAD(prd_start_dt) OVER (PARTITION BY prd_key ORDER BY prd_start_dt) - 1 
+		--		AS DATE
+		--	) AS prd_end_dt
+		CAST(DATEADD(day, -1, LEAD(prd_start_dt) OVER (PARTITION BY prd_key ORDER BY prd_start_dt)) 
+        AS DATE) AS prd_end_dt
+		--case
+		--when prd_end_dt < prd_start_dt then DATEADD(day, 365, prd_start_dt)
+		--when prd_end_dt is null then DATEADD(day, 365, prd_start_dt)
+		--else prd_end_dt
+		--end as prd_end_dt
 		from bronze.crm_prod_info;
-		set @end_time = getdate()
-		print 'load duration :' + cast(datediff(second,@start_time,@end_time) as nvarchar) +'seconds';	
-		print '--------------';
 		set @end_time = getdate();
 		print 'load duration :' + cast(datediff(second,@start_time,@end_time) as nvarchar) +'seconds';
 		print '--------------';
