@@ -11,6 +11,7 @@
 --isnull for handling missing values
 --deriving new relevant columns by splitting a large size info column using substring
 --date format normalization and date validation by rules.
+
 ------------------------------------------------------------------------------------------
 --Transformation bronze table and inserting to silver
 ------------------------------------------------------------------------------------------

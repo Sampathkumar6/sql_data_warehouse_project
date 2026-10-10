@@ -1,4 +1,5 @@
 # sql_data_warehouse_project
+
 Building a modern data warehouse with SQL Server, including ETL processes, data modeling and analytics.
 This repository contains the architecture, scripts, and source data for building an enterprise SQL Data Warehouse.
 
@@ -18,7 +19,7 @@ This repository contains the architecture, scripts, and source data for building
 3.  Data completeness and schema checks
 4.  Data documentation
 
-Building the original data
+## Building the original data
 
 1.  Creating tables for respective crm and erp data sets.
 2.  Using bulk insert for filling data from source files onto earlier created tables.
@@ -43,19 +44,31 @@ Building the original data
 
 ## Snapshots relevant to bronze layer
 
-![Creating tables](images/Bronze_layer/Creating_tables.PNG)
+![Creating tables](images/Bronze_layer/Creating_tables.PNG) ![Bronze layer stored procedure](images/Bronze_layer/Bronze_layer_stored_procedure.PNG) ![Loading data](images/Bronze_layer/Bronze_layer_loading_data.PNG)
 
+## trial for smaller size pics
 
-![Bronze layer stored procedure](images/Bronze_layer/Bronze_layer_stored_procedure.PNG)
+<table>
+    <tr>
+        <td>
+            <p align="center"><b>Creating Tables</b></p>
+            <img src="images/Bronze_layer/Creating_tables.PNG" width="200" alt="Creating tables">
+        </td>
+        <td>
+            <p align="center"><b>Loading Data</b></p>
+            <img src="images/Bronze_layer/Bronze_layer_loading_data.PNG" width="200" alt="Loading data">
+        </td>
+        <td>
+            <p align="center"><b>Stored Procedure</b></p>
+            <img src="images/Bronze_layer/Bronze_layer_stored_procedure.PNG" width="200" alt="Bronze layer stored procedure">
+        </td>
+    </tr>
+</table>
 
-
-![Loading data](images/Bronze_layer/Bronze_layer_loading_data.PNG)
 
 ----------------------------------------------------------------------------------------------
 
 # Silver Layer
 
-1.  Using data analysis for understanding data.
-2.  Performing data cleansing like data quality bronze layer, data transformations, insert into silver layer
-3.  Data validation
-4.  Data documentation
+1. Transforming data from bronze layer and inserting onto silver layer
+

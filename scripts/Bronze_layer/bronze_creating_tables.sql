@@ -3,7 +3,7 @@
 ----------------
 Script note
 ----------------
-1. Building crm,erp tables
+1. Building bronze crm,erp tables
 */
 
 --cust_info

@@ -1,4 +1,11 @@
---repetetive checks during clean and load for all tables
+/*
+----------------
+Script note
+----------------
+1. Repetetive checks during clean and load for all tables
+2. This is optional reference script for all checks performed during silver.transformation
+*/
+
 --Check for nulls or duplicates in primary key
 select
 cst_id,
