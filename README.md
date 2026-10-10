@@ -35,8 +35,8 @@ This repository contains the architecture, scripts, and source data for building
 -  last cell at 'end' should be blank in source file(csv insert with spaces might omit last record)
 -  depending on datasets, int or nvarchar in bronze is more suitable than date, date conversion can be done is silver
 
-### Questionnaire
-![Bronze Layer Questionnaire](images/Bronze_layer/Bronze_layer_questionaire.PNG)
+<!-- ### Questionnaire
+![Bronze Layer Questionnaire](images/Bronze_layer/Bronze_layer_questionaire.PNG) -->
 
 ## Adding error handling, load metrics etc
 -  Adding try and catch logic with catch statements like error_message, error_number etc.
@@ -44,9 +44,17 @@ This repository contains the architecture, scripts, and source data for building
 
 ## Snapshots relevant to bronze layer
 
-![Creating tables](images/Bronze_layer/Creating_tables.PNG) ![Bronze layer stored procedure](images/Bronze_layer/Bronze_layer_stored_procedure.PNG) ![Loading data](images/Bronze_layer/Bronze_layer_loading_data.PNG)
+<!-- ![Creating tables](images/Bronze_layer/Creating_tables.PNG) ![Bronze layer stored procedure](images/Bronze_layer/Bronze_layer_stored_procedure.PNG) ![Loading data](images/Bronze_layer/Bronze_layer_loading_data.PNG) -->
 
 ## trial for smaller size pics
+
+<p align="center">
+  <b>Creating Tables</b> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <b>Loading Data</b> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <b>Stored Procedure</b> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <b>Bronze_layer_questionaire</b><br>
+  <img src="images/Bronze_layer/Creating_tables.PNG" width="200" alt="Creating tables" /> &nbsp; &nbsp; 
+  <img src="images/Bronze_layer/Bronze_layer_loading_data.PNG" width="200" alt="Loading data" /> &nbsp; &nbsp; 
+  <img src="images/Bronze_layer/Bronze_layer_stored_procedure.PNG" width="200" alt="Bronze layer stored procedure" /> &nbsp; &nbsp;
+  <img src="images/Bronze_layer/Bronze_layer_questionaire.PNG" width="200" alt="Bronze layer stored procedure" />
+</p>
 
 <!-- <table>
     <tr>
@@ -81,17 +89,6 @@ This repository contains the architecture, scripts, and source data for building
         </td>
     </tr>
 </table> -->
-
---------------------
-
-<p align="center">
-  <b>Creating Tables</b> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <b>Loading Data</b> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <b>Stored Procedure</b><br>
-  <img src="images/Bronze_layer/Creating_tables.PNG" width="200" alt="Creating tables" /> &nbsp; &nbsp; 
-  <img src="images/Bronze_layer/Bronze_layer_loading_data.PNG" width="200" alt="Loading data" /> &nbsp; &nbsp; 
-  <img src="images/Bronze_layer/Bronze_layer_stored_procedure.PNG" width="200" alt="Bronze layer stored procedure" />
-</p>
-
-
 ----------------------------------------------------------------------------------------------
 
 # Silver Layer
