@@ -48,7 +48,7 @@ This repository contains the architecture, scripts, and source data for building
 
 ## trial for smaller size pics
 
-<table>
+<!-- <table>
     <tr>
         <td>
             <p align="center"><b>Creating Tables</b></p>
@@ -63,9 +63,9 @@ This repository contains the architecture, scripts, and source data for building
             <img src="images/Bronze_layer/Bronze_layer_stored_procedure.PNG" width="200" alt="Bronze layer stored procedure">
         </td>
     </tr>
-</table>
+</table> -->
 
-<table border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse; border: none;">
+<!-- <table border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse; border: none;">
     <tr style="border: none;">
         <td align="center" valign="top" style="border: none;">
             <b>Creating Tables</b><br>
@@ -80,7 +80,16 @@ This repository contains the architecture, scripts, and source data for building
             <img src="images/Bronze_layer/Bronze_layer_stored_procedure.PNG" width="200" alt="Bronze layer stored procedure">
         </td>
     </tr>
-</table>
+</table> -->
+
+--------------------
+
+<p align="center">
+  <b>Creating Tables</b> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <b>Loading Data</b> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <b>Stored Procedure</b><br>
+  <img src="images/Bronze_layer/Creating_tables.PNG" width="200" alt="Creating tables" /> &nbsp; &nbsp; 
+  <img src="images/Bronze_layer/Bronze_layer_loading_data.PNG" width="200" alt="Loading data" /> &nbsp; &nbsp; 
+  <img src="images/Bronze_layer/Bronze_layer_stored_procedure.PNG" width="200" alt="Bronze layer stored procedure" />
+</p>
 
 
 ----------------------------------------------------------------------------------------------
