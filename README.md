@@ -65,6 +65,23 @@ This repository contains the architecture, scripts, and source data for building
     </tr>
 </table>
 
+<table border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse; border: none;">
+    <tr style="border: none;">
+        <td align="center" valign="top" style="border: none;">
+            <b>Creating Tables</b><br>
+            <img src="images/Bronze_layer/Creating_tables.PNG" width="200" alt="Creating tables">
+        </td>
+        <td align="center" valign="top" style="border: none;">
+            <b>Loading Data</b><br>
+            <img src="images/Bronze_layer/Bronze_layer_loading_data.PNG" width="200" alt="Loading data">
+        </td>
+        <td align="center" valign="top" style="border: none;">
+            <b>Stored Procedure</b><br>
+            <img src="images/Bronze_layer/Bronze_layer_stored_procedure.PNG" width="200" alt="Bronze layer stored procedure">
+        </td>
+    </tr>
+</table>
+
 
 ----------------------------------------------------------------------------------------------
 
