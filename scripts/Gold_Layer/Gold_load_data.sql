@@ -1,3 +1,10 @@
+/*
+1. Final gold views
+2. Adding surrogate key, just sys generated unique id (no meaning to facts or dim)
+3. Adding foreign key, 
+*/
+
+
 --Customer dim
 create view gold.dim_customers as
 Select
