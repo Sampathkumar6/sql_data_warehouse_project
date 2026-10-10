@@ -44,17 +44,30 @@ This repository contains the architecture, scripts, and source data for building
 
 ## Snapshots relevant to bronze layer
 
+<table>
+  <tr>
+    <th align="center">Creating Tables</th>
+    <th align="center">Loading Data</th>
+    <th align="center">Stored Procedure</th>
+    <th align="center">Bronze Layer Questionnaire</th>
+  </tr>
+  <tr>
+    <td align="center"><img src="images/Bronze_layer/Creating_tables.PNG" width="200" alt="Creating Tables"></td>
+    <td align="center"><img src="images/Bronze_layer/Bronze_layer_loading_data.PNG" width="200" alt="Loading Data"></td>
+    <td align="center"><img src="images/Bronze_layer/Bronze_layer_stored_procedure.PNG" width="200" alt="Stored Procedure"></td>
+    <td align="center"><img src="images/Bronze_layer/Bronze_layer_questionaire.PNG" width="200" alt="Questionnaire"></td>
+  </tr>
+</table>
+
 <!-- ![Creating tables](images/Bronze_layer/Creating_tables.PNG) ![Bronze layer stored procedure](images/Bronze_layer/Bronze_layer_stored_procedure.PNG) ![Loading data](images/Bronze_layer/Bronze_layer_loading_data.PNG) -->
 
-## trial for smaller size pics
-
-<p align="center">
+<!-- <p align="center">
   <b>Creating Tables</b> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <b>Loading Data</b> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <b>Stored Procedure</b> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <b>Bronze_layer_questionaire</b><br>
   <img src="images/Bronze_layer/Creating_tables.PNG" width="200" alt="Creating tables" /> &nbsp; &nbsp; 
   <img src="images/Bronze_layer/Bronze_layer_loading_data.PNG" width="200" alt="Loading data" /> &nbsp; &nbsp; 
   <img src="images/Bronze_layer/Bronze_layer_stored_procedure.PNG" width="200" alt="Bronze layer stored procedure" /> &nbsp; &nbsp;
   <img src="images/Bronze_layer/Bronze_layer_questionaire.PNG" width="200" alt="Bronze layer stored procedure" />
-</p>
+</p> -->
 
 <!-- <table>
     <tr>
