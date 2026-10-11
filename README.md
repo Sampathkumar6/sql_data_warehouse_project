@@ -14,7 +14,7 @@ The data architecture for this project follows Medallion Architecture **Bronze**
     <th align="center">Data Architecture</th>
   </tr>
   <tr>
-    <td align="center"><img src="images/data_architecture.PNG" width="300" alt="Data Architecture"></td>
+    <td align="center"><img src="data_architecture.PNG" width="300" alt="Data Architecture"></td>
   </tr>
 </table>
 
@@ -56,16 +56,18 @@ data-warehouse-project/
 ├── datasets/                           # Raw datasets used for the project (ERP and CRM data)
 │
 ├── design/                                 # Project documentation and architecture details
-│   ├── Data_flow_diagram.drawio            # Draw.io file for the data flow diagram
+│   ├── Data_flow_diagram.drawio            # data flow diagram
 │   ├── Integration_model.drawio            # Catalog of datasets, including field descriptions and metadata
 │   ├── Project_high_level_design.drawio    # Macro view
-│   ├── star_data_model.drawio                # 
+│   ├── star_data_model.drawio              # star schema for gold layer fact and dimenton representation
 │
 ├── scripts/                                # SQL scripts for ETL and transformations
 │   ├── bronze/                             # Scripts for extracting and loading raw data
 │   ├── silver/                             # Scripts for cleaning and transforming data
 │   ├── gold/                               # Scripts for creating analytical models
 │
+├── data_architecture.png                   # Macro View
+├── gold_data_catalog.md                    # Final gold layer views ready for insights and project downstream flow.
 ├── README.md                               # Project overview and instructions
 └── LICENSE                                 # License information for the repository
 ```
