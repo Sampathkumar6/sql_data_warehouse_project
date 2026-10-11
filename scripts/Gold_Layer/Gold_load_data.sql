@@ -58,8 +58,7 @@ sls_ship_dt as shipping_date,
 sls_due_dt as due_date,
 sls_sales as sales_amount,
 sls_quantity as quantity,
-sls_price as price,
-dwh_create_date
+sls_price as price
 FROM silver.crm_sales_details sd
 left join gold.dim_product pr
 on sd.sls_prd_key = pr.product_num

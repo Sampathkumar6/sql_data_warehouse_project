@@ -1,110 +1,101 @@
-# sql_data_warehouse_project
 
-Building a modern data warehouse with SQL Server, including ETL processes, data modeling and analytics.
-This repository contains the architecture, scripts, and source data for building an enterprise SQL Data Warehouse.
+# Data Warehouse Project
 
-1. Creating brand new database "DataWarehouse".
-2. Creating schemas for bronze, silver, gold.
+Welcome to the **Data Warehouse** repository! 🚀  
+This project demonstrates a comprehensive data warehousing solution. Designed as a portfolio project, it highlights industry best practices in data engineering.
 
-## Directory Structure
-* **datasets/** - Raw source data (CSV/Excel files).
-* **design/** - Data models, architecture diagrams, and schema blueprints.
-* **scripts/** - SQL scripts for ETL pipeline, DDL tables, and stored procedures.
+---
+## 🏗️ Data Architecture
 
-----------------------------------------------------------------------------------------------
-
-# Bronze Layer
-1.  Interview source system experts
-2.  Data Ingetion
-3.  Data completeness and schema checks
-4.  Data documentation
-
-## Building the original data
-
-1.  Creating tables for respective crm and erp data sets.
-2.  Using bulk insert for filling data from source files onto earlier created tables.
-3.  Introducing start,end time variable to show individual and batch load metrics.
-4.  Introducing error handling statements (try,catch) which provide info luike error message, number etc.
-5.  Saving the entire load section to stored procedure
-
-## Checking tips after each bulk insert -
--  is data accurately inserted ?
--  number of columns match ?
--  column to column sync check ?
--  total row count match ?
--  last cell at 'end' should be blank in source file(csv insert with spaces might omit last record)
--  depending on datasets, int or nvarchar in bronze is more suitable than date, date conversion can be done is silver
-
-<!-- ### Questionnaire
-![Bronze Layer Questionnaire](images/Bronze_layer/Bronze_layer_questionaire.PNG) -->
-
-## Adding error handling, load metrics etc
--  Adding try and catch logic with catch statements like error_message, error_number etc.
--  Adding time variables like start and end to measere loading time for tables and entire batch load time
-
-## Snapshots relevant to bronze layer
+The data architecture for this project follows Medallion Architecture **Bronze**, **Silver**, and **Gold** layers:
 
 <table>
   <tr>
-    <th align="center">Creating Tables</th>
-    <th align="center">Loading Data</th>
-    <th align="center">Stored Procedure</th>
-    <th align="center">Bronze Layer Questionnaire</th>
+    <th align="center">Data Architecture</th>
   </tr>
   <tr>
-    <td align="center"><img src="images/Bronze_layer/Creating_tables.PNG" width="200" alt="Creating Tables"></td>
-    <td align="center"><img src="images/Bronze_layer/Bronze_layer_loading_data.PNG" width="200" alt="Loading Data"></td>
-    <td align="center"><img src="images/Bronze_layer/Bronze_layer_stored_procedure.PNG" width="200" alt="Stored Procedure"></td>
-    <td align="center"><img src="images/Bronze_layer/Bronze_layer_questionaire.PNG" width="200" alt="Questionnaire"></td>
+    <td align="center"><img src="images/data_architecture.PNG" width="300" alt="Data Architecture"></td>
   </tr>
 </table>
 
-<!-- ![Creating tables](images/Bronze_layer/Creating_tables.PNG) ![Bronze layer stored procedure](images/Bronze_layer/Bronze_layer_stored_procedure.PNG) ![Loading data](images/Bronze_layer/Bronze_layer_loading_data.PNG) -->
+1. **Bronze Layer**: Stores raw data as-is from the source systems. Data is ingested from CSV Files into SQL Server Database.
+2. **Silver Layer**: This layer includes data cleansing, standardization, and normalization processes to prepare data for analysis.
+3. **Gold Layer**: Houses business-ready data modeled into a star schema required for reporting and analytics.
 
-<!-- <p align="center">
-  <b>Creating Tables</b> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <b>Loading Data</b> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <b>Stored Procedure</b> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <b>Bronze_layer_questionaire</b><br>
-  <img src="images/Bronze_layer/Creating_tables.PNG" width="200" alt="Creating tables" /> &nbsp; &nbsp; 
-  <img src="images/Bronze_layer/Bronze_layer_loading_data.PNG" width="200" alt="Loading data" /> &nbsp; &nbsp; 
-  <img src="images/Bronze_layer/Bronze_layer_stored_procedure.PNG" width="200" alt="Bronze layer stored procedure" /> &nbsp; &nbsp;
-  <img src="images/Bronze_layer/Bronze_layer_questionaire.PNG" width="200" alt="Bronze layer stored procedure" />
-</p> -->
+---
+## 📖 Project Overview
 
-<!-- <table>
-    <tr>
-        <td>
-            <p align="center"><b>Creating Tables</b></p>
-            <img src="images/Bronze_layer/Creating_tables.PNG" width="200" alt="Creating tables">
-        </td>
-        <td>
-            <p align="center"><b>Loading Data</b></p>
-            <img src="images/Bronze_layer/Bronze_layer_loading_data.PNG" width="200" alt="Loading data">
-        </td>
-        <td>
-            <p align="center"><b>Stored Procedure</b></p>
-            <img src="images/Bronze_layer/Bronze_layer_stored_procedure.PNG" width="200" alt="Bronze layer stored procedure">
-        </td>
-    </tr>
-</table> -->
+This project involves:
 
-<!-- <table border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse; border: none;">
-    <tr style="border: none;">
-        <td align="center" valign="top" style="border: none;">
-            <b>Creating Tables</b><br>
-            <img src="images/Bronze_layer/Creating_tables.PNG" width="200" alt="Creating tables">
-        </td>
-        <td align="center" valign="top" style="border: none;">
-            <b>Loading Data</b><br>
-            <img src="images/Bronze_layer/Bronze_layer_loading_data.PNG" width="200" alt="Loading data">
-        </td>
-        <td align="center" valign="top" style="border: none;">
-            <b>Stored Procedure</b><br>
-            <img src="images/Bronze_layer/Bronze_layer_stored_procedure.PNG" width="200" alt="Bronze layer stored procedure">
-        </td>
-    </tr>
-</table> -->
-----------------------------------------------------------------------------------------------
+1. **Data Architecture**: Designing a Modern Data Warehouse Using Medallion Architecture **Bronze**, **Silver**, and **Gold** layers.
+2. **ETL Pipelines**: Extracting, transforming, and loading data from source systems into the warehouse.
+3. **Data Modeling**: Developing fact and dimension tables optimized for analytical queries.
 
-# Silver Layer
+---
 
-1. Transforming data from bronze layer and inserting onto silver layer
+## 🚀 Project Requirements
 
+### Building the Data Warehouse (Data Engineering)
+
+#### Objective
+Develop a modern data warehouse using SQL Server to consolidate sales data, for downstream reporting and informed decision-making.
+
+#### Specifications
+- **Data Sources**: Import data from two source systems (ERP and CRM) provided as CSV files.
+- **Data Quality**: Cleanse and resolve data quality issues prior to analysis.
+- **Integration**: Combine both sources into a single, user-friendly data model designed for analytical queries.
+- **Scope**: Focus on the latest dataset only; historization of data is not required.
+- **Documentation**: Provide clear documentation of the data model to support both business stakeholders and analytics teams.
+
+---
+
+## 📂 Repository Structure
+```
+data-warehouse-project/
+│
+├── datasets/                           # Raw datasets used for the project (ERP and CRM data)
+│
+├── design/                                 # Project documentation and architecture details
+│   ├── Data_flow_diagram.drawio            # Draw.io file for the data flow diagram
+│   ├── Integration_model.drawio            # Catalog of datasets, including field descriptions and metadata
+│   ├── Project_high_level_design.drawio    # Macro view
+│   ├── star_data_model.drawio                # 
+│
+├── scripts/                                # SQL scripts for ETL and transformations
+│   ├── bronze/                             # Scripts for extracting and loading raw data
+│   ├── silver/                             # Scripts for cleaning and transforming data
+│   ├── gold/                               # Scripts for creating analytical models
+│
+├── README.md                               # Project overview and instructions
+└── LICENSE                                 # License information for the repository
+```
+---
+
+## Project releated snips
+
+<table>
+  <tr>
+    <th align="center">Bronze Creating Tables</th>
+    <th align="center">Bronze Loading Data</th>
+    <th align="center">Bronze Stored Procedure</th>
+    <th align="center">Bronze Layer Questionnaire</th>
+    <th align="center">SL Understanding data</th>
+    <th align="center">SL stored procedure 1</th>
+    <th align="center">SL stored procedure 2</th>
+    <th align="center">Gold Views for downstream</th>
+  </tr>
+  <tr>
+    <td align="center"><img src="images/Bronze_layer/Bronze_Creating_tables.PNG" width="200" alt="Creating Tables"></td>
+    <td align="center"><img src="images/Bronze_layer/Bronze_layer_loading_data.PNG" width="200" alt="Loading Data"></td>
+    <td align="center"><img src="images/Bronze_layer/Bronze_layer_stored_procedure.PNG" width="200" alt="Stored Procedure"></td>
+    <td align="center"><img src="images/Bronze_layer/Bronze_layer_questionaire.PNG" width="200" alt="Questionnaire"></td>
+    <td align="center"><img src="images/Silver_Layer/SL_Understanding_data.PNG" width="200" alt="Understanding Data"></td>
+    <td align="center"><img src="images/Silver_Layer/SL_stored_procedure_output1.PNG" width="200" alt="Stored Procedure"></td>
+    <td align="center"><img src="images/Silver_Layer/SL_stored_procedure_output2.PNG" width="200" alt="Stored Procedure"></td>
+    <td align="center"><img src="images/Gold_Layer/Gold_final_view.PNG" width="200" alt="Final gold views"></td>
+  </tr>
+</table>
+
+## 🛡️ License
+
+This project is licensed under the [MIT License](LICENSE.txt). You are free to use, modify, and share this project with proper attribution.
